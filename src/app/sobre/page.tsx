@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Sobre',
-  description: 'Conheça mais sobre Yuri Higa, desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL, AWS e Azure.',
+  description: 'Sou Yuri Higa, desenvolvedor back-end em formação, com 1 ano e meio de experiência prática em .NET, Docker, SQL Server, MySQL, AWS e Azure.',
 }
 
 export default function SobrePage() {
