@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s | Yuri Higa',
   },
   description:
-    'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL, AWS e Azure. Estudante há 1 ano e meio, aprendendo CI/CD e automações com n8n. Localizado em Antônio João, MS, Brasil.',
+    'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL e AWS. Em formação há 1 ano e meio, explorando práticas de DevOps e CI/CD. Localizado em Antônio João, MS, Brasil.',
   keywords: [
     'back-end developer',
     '.NET',
@@ -26,9 +26,8 @@ export const metadata: Metadata = {
     'SQL Server',
     'MySQL',
     'AWS',
-    'Azure',
     'CI/CD',
-    'n8n',
+    'DevOps',
     'desenvolvedor backend',
   ],
   authors: [{ name: 'Yuri Higa' }],
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'Yuri Higa | Portfolio',
     title: 'Yuri Higa | Back-end Developer',
     description:
-      'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL, AWS e Azure. Estudante há 1 ano e meio, aprendendo CI/CD e automações.',
+      'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL e AWS. Em formação há 1 ano e meio, explorando práticas de DevOps e CI/CD.',
     images: [
       {
         url: '/og-image.jpg',
@@ -54,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Yuri Higa | Back-end Developer',
     description:
-      'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL, AWS e Azure.',
+      'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL e AWS.',
     images: ['/og-image.jpg'],
   },
   robots: {

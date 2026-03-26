@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Sobre',
-  description: 'Sou Yuri Higa, desenvolvedor back-end em formação, com 1 ano e meio de experiência prática em .NET, Docker, SQL Server, MySQL, AWS e Azure.',
+  description: 'Sou Yuri Higa, desenvolvedor back-end em formação, com 1 ano e meio de experiência prática em .NET, Docker, SQL Server, MySQL e AWS.',
 }
 
 export default function SobrePage() {
@@ -42,9 +42,6 @@ export default function SobrePage() {
                 </span>
                 <span className="rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-200">
                   AWS
-                </span>
-                <span className="rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-200">
-                  Azure
                 </span>
               </div>
             </div>

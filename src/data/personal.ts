@@ -1,8 +1,8 @@
 export const data = {
   name: 'Yuri Higa',
-  headline: 'Back-end Developer — .NET, Docker, SQL Server, AWS e Azure',
+  headline: 'Back-end Developer — .NET, Docker, SQL Server, AWS e MySQL',
   location: 'Antônio João, MS, Brasil',
-  bio: 'Sou Yuri Higa, desenvolvedor back-end em formação, com 1 ano e meio de experiência prática em .NET, Docker, SQL Server, MySQL, AWS e Azure. Tenho explorado práticas de DevOps, aplicando conceitos para criar soluções escaláveis, seguras e eficientes. Meu objetivo é aplicar esse conhecimento em projetos que unam qualidade técnica e impacto real, contribuindo para equipes ágeis e ambientes de inovação.',
+  bio: 'Sou Yuri Higa, desenvolvedor back-end em formação, com 1 ano e meio de experiência prática em .NET, Docker, SQL Server, MySQL e AWS. Tenho explorado práticas de DevOps, aplicando conceitos para criar soluções escaláveis, seguras e eficientes. Meu objetivo é aplicar esse conhecimento em projetos que unam qualidade técnica e impacto real, contribuindo para equipes ágeis e ambientes de inovação.',
   links: {
     github: 'https://github.com/uyrizin',
     linkedin: 'https://www.linkedin.com/in/yuri-higa-885750334/',
@@ -15,9 +15,7 @@ export const data = {
     'SQL Server',
     'MySQL',
     'AWS',
-    'Azure',
     'CI/CD',
-    'n8n',
     'REST APIs',
     'Git',
     'Back-end Development',
