@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react'
 import { ProjectCard } from '@/components/ProjectCard'
-import { Tag } from '@/components/Tag'
 import { getProjects, getAllTags } from '@/data/projects'
 
 export default function ProjetosPage() {
@@ -25,13 +24,17 @@ export default function ProjetosPage() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="mx-auto max-w-6xl">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">
+          Laboratório e pesquisa aplicada
+        </p>
         <h1 className="mb-4 text-4xl font-bold">Projetos</h1>
-        <p className="mb-8 text-lg text-gray-600 dark:text-gray-400">
-          Explore alguns dos projetos que desenvolvi, focados em back-end,
-          APIs e arquitetura de sistemas.
+        <p className="mb-8 max-w-3xl text-lg text-gray-600 dark:text-gray-400">
+          Projetos autorais em desenvolvimento nas áreas de Cibersegurança,
+          automação, inteligência artificial e desenvolvimento Android. Os
+          detalhes públicos serão atualizados conforme cada recurso for
+          implementado e validado.
         </p>
 
-        {/* Busca */}
         <div className="mb-8">
           <input
             type="text"
@@ -43,7 +46,6 @@ export default function ProjetosPage() {
           />
         </div>
 
-        {/* Filtros por Tag */}
         <div className="mb-8">
           <h2 className="mb-4 text-lg font-semibold">Filtrar por tecnologia:</h2>
           <div className="flex flex-wrap gap-2">
@@ -73,7 +75,6 @@ export default function ProjetosPage() {
           </div>
         </div>
 
-        {/* Lista de Projetos */}
         {filteredProjects.length > 0 ? (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {filteredProjects.map((project) => (
