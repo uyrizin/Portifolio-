@@ -13,47 +13,46 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Yuri Higa | Back-end Developer',
+    default: 'Yuri Higa | Cibersegurança, AppSec e Security Research',
     template: '%s | Yuri Higa',
   },
   description:
-    'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL e AWS. Em formação há 1 ano e meio, explorando práticas de DevOps e CI/CD. Localizado em Antônio João, MS, Brasil.',
+    'Portfólio de Yuri Higa, estudante de Cibersegurança na FIAP com foco em AppSec, análise de vulnerabilidades, segurança ofensiva e projetos próprios.',
   keywords: [
-    'back-end developer',
-    '.NET',
-    'C#',
-    'Docker',
-    'SQL Server',
-    'MySQL',
-    'AWS',
-    'CI/CD',
-    'DevOps',
-    'desenvolvedor backend',
+    'Yuri Higa',
+    'cibersegurança',
+    'cybersecurity',
+    'Application Security',
+    'AppSec',
+    'análise de vulnerabilidades',
+    'Pentest autorizado',
+    'Linux',
+    'Cloud Security',
+    'DevSecOps',
   ],
   authors: [{ name: 'Yuri Higa' }],
   creator: 'Yuri Higa',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://seudominio.com',
     siteName: 'Yuri Higa | Portfolio',
-    title: 'Yuri Higa | Back-end Developer',
+    title: 'Yuri Higa | Cibersegurança, AppSec e Security Research',
     description:
-      'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL e AWS. Em formação há 1 ano e meio, explorando práticas de DevOps e CI/CD.',
+      'Estudante de Cibersegurança na FIAP. Projetos e estudos em AppSec, análise de vulnerabilidades e segurança ofensiva.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Yuri Higa - Back-end Developer',
+        alt: 'Yuri Higa - Cibersegurança e AppSec',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yuri Higa | Back-end Developer',
+    title: 'Yuri Higa | Cibersegurança e AppSec',
     description:
-      'Desenvolvedor back-end com foco em .NET, Docker, SQL Server, MySQL e AWS.',
+      'Portfólio de projetos e estudos em Cibersegurança, AppSec e análise de vulnerabilidades.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -66,10 +65,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    // Adicione seu código de verificação do Google Search Console
-    // google: 'seu-codigo-aqui',
   },
 }
 
