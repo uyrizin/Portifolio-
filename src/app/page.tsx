@@ -11,9 +11,11 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary-600 dark:text-primary-400">
+            Cibersegurança • AppSec • Security Research
+          </p>
           <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Olá, eu sou{' '}
             <span className="text-primary-600 dark:text-primary-400">
@@ -31,7 +33,7 @@ export default function Home() {
               href="/projetos"
               className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-700 focus-visible-ring dark:bg-primary-500 dark:hover:bg-primary-600"
             >
-              Ver Projetos
+              Explorar Projetos
             </Link>
             <Link
               href="/sobre"
@@ -48,36 +50,41 @@ export default function Home() {
               }}
               className="no-print"
             >
-              📄 Baixar CV
+              📄 Imprimir Perfil
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Featured Projects */}
       <section className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-8 text-3xl font-bold">Projetos em Destaque</h2>
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">
+                Laboratório e desenvolvimento
+              </p>
+              <h2 className="text-3xl font-bold">Projetos em Destaque</h2>
+            </div>
+            <Link href="/projetos" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-400">
+              Ver todos os projetos →
+            </Link>
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
-          <div className="mt-8 text-center">
-            <Link
-              href="/projetos"
-              className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 focus-visible-ring dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
-            >
-              Ver Todos os Projetos
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Skills Preview */}
       <section className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-8 text-3xl font-bold">Tecnologias & Ferramentas</h2>
+          <div className="mb-8 text-center">
+            <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">
+              Conhecimentos em evolução
+            </p>
+            <h2 className="text-3xl font-bold">Tecnologias & Ferramentas</h2>
+          </div>
           <div className="flex flex-wrap justify-center gap-3">
             {data.skills.map((skill) => (
               <span
@@ -91,7 +98,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* JSON-LD Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -99,7 +105,7 @@ export default function Home() {
             '@context': 'https://schema.org',
             '@type': 'Person',
             name: data.name,
-            jobTitle: 'Back-end Developer',
+            jobTitle: 'Estudante de Cibersegurança',
             description: data.headline,
             address: {
               '@type': 'PostalAddress',
@@ -107,11 +113,7 @@ export default function Home() {
               addressRegion: 'MS',
               addressCountry: 'BR',
             },
-            sameAs: [
-              data.links.github,
-              data.links.linkedin,
-              `mailto:${data.links.email}`,
-            ],
+            sameAs: [data.links.github, data.links.linkedin],
             knowsAbout: data.skills,
           }),
         }}
