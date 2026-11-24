@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Tag } from './Tag'
 import type { Project } from '@/data/projects'
 
@@ -10,21 +9,26 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition-shadow hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="mb-2 text-xl font-semibold group-hover:text-primary-600 dark:group-hover:text-primary-400">
-          {project.name}
-        </h3>
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <h3 className="text-xl font-semibold group-hover:text-primary-600 dark:group-hover:text-primary-400">
+            {project.name}
+          </h3>
+          {project.status && (
+            <span className="rounded-full border border-amber-300 bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-200">
+              {project.status}
+            </span>
+          )}
+        </div>
         <p className="mb-4 flex-1 text-gray-600 dark:text-gray-400">
           {project.description}
         </p>
 
-        {/* Tags */}
         <div className="mb-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <Tag key={tag} label={tag} />
           ))}
         </div>
 
-        {/* Links */}
         <div className="flex gap-4">
           {project.repoUrl && (
             <a
